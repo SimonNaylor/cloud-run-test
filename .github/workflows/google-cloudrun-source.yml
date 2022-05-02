@@ -53,7 +53,7 @@ on:
 
 env:
   PROJECT_ID: cloud-run-348016 # TODO: update Google Cloud project id
-  SERVICE: please_work # TODO: update Cloud Run service name
+  SERVICE: pleaseWork # TODO: update Cloud Run service name
   REGION: us-central1 # TODO: update Cloud Run service region
 
 jobs:
