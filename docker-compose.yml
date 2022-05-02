@@ -1,6 +1,6 @@
 version: "3.8"
 services:
-  command: flask run
+
   web:
     build: .
     ports:
@@ -14,3 +14,4 @@ services:
       FLASK_RUN_DEBUGGER: 0
       FLASK_APP: main.py
       FLASK_RUN_HOST: 0.0.0.0
+      command: flask run
