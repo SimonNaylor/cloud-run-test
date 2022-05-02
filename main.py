@@ -5,10 +5,12 @@ from flask import Flask
 app = Flask(__name__)
 
 
-@app.route("/")
-def hello_world():
-    name = os.environ.get("NAME", "World")
-    return "Hello {}!".format(name)
+@app.route('/predict', methods=['POST'])
+def predict():
+    response_object = {'status': 'success'}
+    if request.method == 'POST':
+        post_data = request.get_json()
+        response_object['message'] = post_data
 
 
 if __name__ == "__main__":
